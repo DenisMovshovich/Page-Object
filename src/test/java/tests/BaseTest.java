@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import steps.SearchSteps;
 
 import java.io.File;
 
@@ -33,11 +34,5 @@ public abstract class BaseTest {
     if (driver != null) {
             driver.quit();
         }}
-
-
-//    @DataProvider(name = "dataProvider")
-//    public Object[][] dataProviderMethod() {
-//        return new Object[][]{{"selenium java"}, {"selenium javascript"}};
-//    }
 
 }
