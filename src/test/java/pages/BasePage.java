@@ -12,19 +12,16 @@ public abstract class BasePage {
     // Конструктор класса BasePage.
     public BasePage() {
         // Создается объект driver и присваивается значение, возвращенное методом getDriver().
-        this.driver = getDriver();
+        driver = getDriver();
 
         // Используется метод из библиотеки PageFactory для инициализации элементов страницы.
         // В данном случае, элементы инициализируются на основе объекта driver и текущего экземпляра класса BasePage (this).
         PageFactory.initElements(driver, this);
     }
 
-    public void updatePage() {
-        this.driver.navigate().refresh();
-    }
-
-    public void goBack() {
-        driver.navigate().back();
-    }
+    public void goToUrl(String text) { driver.navigate().to(text); }
+    public void updatePage() { driver.navigate().refresh(); }
+    public void goBack() { driver.navigate().back(); }
+    public void goForward() { driver.navigate().forward(); }
 
 }

@@ -11,19 +11,26 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class SearchResultsPage extends BasePage {
 
     @FindBy(xpath = "//div[@class='yuRUbf']//h3")
-    private WebElement resultRow;
+    private WebElement FirstResultRow;
+
+    @FindBy(xpath = "//img[@class='jfN4p']")
+    public WebElement GoogleLogoButton;
 
     public SearchResultsPage() {
         super();
     }
 
     public void assertThatTopResultContainsCorrectText(String expected) {
-        assertThat(resultRow.isDisplayed()).as("Element has not been displayed!").isTrue();
-        assertThat(resultRow.getText()).as("Wrong text has been displayed").isEqualTo(expected);
+        assertThat(FirstResultRow.isDisplayed()).as("Element has not been displayed!").isTrue();
+        assertThat(FirstResultRow.getText()).as("Wrong text has been displayed").isEqualTo(expected);
     }
 
     public void assertThatTopResultContainsProperAttributeText(String expected) {
-        assertThat(resultRow.getAttribute("class")).as("Wrong attribute text!").contains("LC20lb MBeuO DKV0Md");
+        assertThat(FirstResultRow.getAttribute("class")).as("Wrong attribute text!").contains("LC20lb MBeuO DKV0Md");
+    }
+
+    public void assertThatElementExists(WebElement webElement) {
+        assertThat(webElement).as("Element does not exist").isNotNull();
     }
 
 }

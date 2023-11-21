@@ -1,10 +1,11 @@
 package steps;
 
+import org.openqa.selenium.WebElement;
 import pages.SearchResultsPage;
 
-public class SearchResultsSteps {
+public class SearchResultsSteps extends BaseSteps {
 
-    private SearchResultsPage searchResultsPage = new SearchResultsPage();
+    private final SearchResultsPage searchResultsPage = new SearchResultsPage();
 
     public SearchResultsSteps verifyThatTopResultContainsCorrectText(String text) {
         searchResultsPage.assertThatTopResultContainsCorrectText(text);
@@ -15,4 +16,15 @@ public class SearchResultsSteps {
         searchResultsPage.assertThatTopResultContainsProperAttributeText(text);
         return this;
     }
+
+    public SearchResultsSteps verifyThatElementExists(WebElement webElement) {
+        searchResultsPage.assertThatElementExists(webElement);
+        return this;
+    }
+
+    public SearchResultsSteps updateSearchResultsPage() {
+        searchResultsPage.updatePage();
+        return this;
+    }
+
 }

@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f89d2ee5-5183-44c4-9e69-c81e9d3e155e" name="Changes" comment="Added the template of Steps automation framework">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/msedgedriver.exe" afterDir="false" />
+    <list default="true" id="f89d2ee5-5183-44c4-9e69-c81e9d3e155e" name="Changes" comment="Added the template of Steps + DriverFactory automation framework">
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/BaseSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/PropertyReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/framework.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/SearchResultsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SearchResultsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SearchSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/msedgedriver.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +37,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2X296J7xsI6xnfJCLRliAPqUsRk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,13 +52,21 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dmovshovich/IdeaProjects/Steps and Chain of Invocations&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dmovshovich/IdeaProjects/PropertyReader&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/dmovshovich/IdeaProjects/LearnAutomation/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -53,13 +74,14 @@
       <recent name="C:\Users\dmovshovich\IdeaProjects\LearnAutomation\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dmovshovich\IdeaProjects\PropertyReader\src\test\resources" />
       <recent name="C:\Users\dmovshovich\IdeaProjects\Steps and Chain of Invocations\src\test\resources" />
       <recent name="C:\Users\dmovshovich\IdeaProjects\Page Object\src\test\resources" />
       <recent name="C:\Users\dmovshovich\IdeaProjects\LearnAutomation\src\test\resources" />
       <recent name="C:\Users\dmovshovich\IdeaProjects\LearnAutomation\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SearchTest.openGoogleComInChromeTest">
+  <component name="RunManager" selected="TestNG.SearchTest.openGoogleComInChromeTest1">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Steps and Chain of Invocations" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,19 +117,6 @@
     <configuration name="GoogleSearchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GoogleSearchTest" />
       <module name="LearnAutomation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Literals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson2.Literals" />
-      <module name="LearnAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,15 +170,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchTest.openGoogleComInChromeTest1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LearnAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
+      <option name="METHOD_NAME" value="openGoogleComInChromeTest1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SearchTest.openGoogleComInChromeTest1" />
+        <item itemvalue="TestNG.SearchTest" />
         <item itemvalue="TestNG.SearchTest.openGoogleComInChromeTest" />
         <item itemvalue="Application.GoogleSearchTest" />
         <item itemvalue="Application.Volume" />
-        <item itemvalue="Application.Literals" />
-        <item itemvalue="TestNG.SearchTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="FluentLenium" />
+    <option name="lastLanguageId" value="JAVA" />
+    <option name="lastUrl" value="https://www.google.com/search?q=Selenium+Java&amp;sca_esv=582945116&amp;source=hp&amp;ei=gTZWZYb4MsyRxc8P-5qH0Ak&amp;iflsig=AO6bgOgAAAAAZVZEkYmPuveOnIWsy4UK-k-ztn9shZX3&amp;ved=0ahUKEwjGvNqJ7MiCAxXMSPEDHXvNAZoQ4dUDCAo&amp;uact=5&amp;oq=Selenium+Java&amp;gs_lp=Egdnd3Mtd2l6Ig1TZWxlbml1bSBKYXZhMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEipL1C5Flj-LHABeACQAQCYAZ4BoAGVDaoBBDAuMTO4AQPIAQD4AQGoAgDCAgsQABiKBRixAxiDAcICCxAuGIoFGLEDGIMBwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICBBAAGAPCAhEQLhiABBixAxiDARjHARjRA8ICCxAuGIAEGLEDGIMBwgIFEC4YgATCAggQLhixAxiABMICCBAuGIAEGLEDwgIXEC4YgAQYsQMYgwEYxwEYrwEYmAUYmgU&amp;sclient=gws-wiz" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -179,6 +211,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697816134853</updated>
+      <workItem from="1699897486341" duration="381000" />
+      <workItem from="1699897944878" duration="1743000" />
+      <workItem from="1700040736084" duration="12287000" />
+      <workItem from="1700071579061" duration="61203000" />
+      <workItem from="1700579898073" duration="45000" />
+      <workItem from="1700579948538" duration="182000" />
     </task>
     <task id="LOCAL-00001" summary="Added the template of page object automation framework">
       <option name="closed" value="true" />
@@ -196,8 +234,19 @@
       <option name="project" value="LOCAL" />
       <updated>1699889595354</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added the template of Steps + DriverFactory automation framework">
+      <option name="closed" value="true" />
+      <created>1699897675270</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699897675270</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -225,7 +274,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the template of page object automation framework" />
     <MESSAGE value="Added the template of Steps automation framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the template of Steps automation framework" />
+    <MESSAGE value="Added the template of Steps + DriverFactory automation framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the template of Steps + DriverFactory automation framework" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -235,7 +285,20 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
