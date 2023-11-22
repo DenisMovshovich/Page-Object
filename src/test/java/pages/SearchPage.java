@@ -4,17 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SearchPage extends BasePage {
 
     @FindBy(name = "q")
     private WebElement searchField;
 
-    @FindBy(xpath = "//div[4]/center/input[1]")
-    private WebElement googleSearchButton;
+    @FindBy(xpath = "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]")
+    private WebElement searchButton;
 
     @FindBy(xpath = "//div[4]/center/input[2]")
-    private WebElement ImFeelingLuckyButton;
+    private WebElement imFeelingLuckyButton;
 
     @FindBy(xpath = "//*[@id='gb']/div/div[1]/div/div[1]/a")
     private WebElement gMailButton;
@@ -35,7 +36,7 @@ public class SearchPage extends BasePage {
     private WebElement googleAccountButton;
 
 
-//     Конструктор по умолчанию класса SearchPage.
+    //     Конструктор по умолчанию класса SearchPage.
 //     Использует конструктор суперкласса для инициализации объекта SearchPage.
     public SearchPage() {
         super();
@@ -55,12 +56,18 @@ public class SearchPage extends BasePage {
         searchField.sendKeys(Keys.RETURN);
     }
 
-    public void pressGoogleSearchButton() {
-        googleSearchButton.click();
+    public void pressSearchButtonOrPressEnter() throws InterruptedException {
+        if (isElementFound(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]"), 3)) {
+            wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+            searchButton.click();
+        } else {
+            pressEnter();
+        }
+
     }
 
     public void pressImFeelingLuckyButton() {
-        ImFeelingLuckyButton.click();
+        imFeelingLuckyButton.click();
     }
 
     public void pressGmailButton() {

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f89d2ee5-5183-44c4-9e69-c81e9d3e155e" name="Changes" comment="Added the template of PageObject + Steps + DriverFactory + PropertyReader automation framework">
+    <list default="true" id="f89d2ee5-5183-44c4-9e69-c81e9d3e155e" name="Changes" comment="minor fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +193,7 @@
   <component name="SeleniumInternalSettingsState">
     <option name="lastFrameworkName" value="FluentLenium" />
     <option name="lastLanguageId" value="JAVA" />
-    <option name="lastUrl" value="https://www.google.com/search?q=Selenium+Java&amp;sca_esv=582945116&amp;source=hp&amp;ei=gTZWZYb4MsyRxc8P-5qH0Ak&amp;iflsig=AO6bgOgAAAAAZVZEkYmPuveOnIWsy4UK-k-ztn9shZX3&amp;ved=0ahUKEwjGvNqJ7MiCAxXMSPEDHXvNAZoQ4dUDCAo&amp;uact=5&amp;oq=Selenium+Java&amp;gs_lp=Egdnd3Mtd2l6Ig1TZWxlbml1bSBKYXZhMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEipL1C5Flj-LHABeACQAQCYAZ4BoAGVDaoBBDAuMTO4AQPIAQD4AQGoAgDCAgsQABiKBRixAxiDAcICCxAuGIoFGLEDGIMBwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICBBAAGAPCAhEQLhiABBixAxiDARjHARjRA8ICCxAuGIAEGLEDGIMBwgIFEC4YgATCAggQLhixAxiABMICCBAuGIAEGLEDwgIXEC4YgAQYsQMYgwEYxwEYrwEYmAUYmgU&amp;sclient=gws-wiz" />
+    <option name="lastUrl" value="https://www.google.com/webhp?hl=sr&amp;sa=X&amp;ved=0ahUKEwjNr7TK8teCAxVIQfEDHR3jDPUQPAgJ" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -205,7 +209,7 @@
       <workItem from="1700071579061" duration="61203000" />
       <workItem from="1700579898073" duration="45000" />
       <workItem from="1700579948538" duration="182000" />
-      <workItem from="1700581218544" duration="4293000" />
+      <workItem from="1700581218544" duration="9162000" />
     </task>
     <task id="LOCAL-00001" summary="Added the template of page object automation framework">
       <option name="closed" value="true" />
@@ -239,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700581470343</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="minor fixes">
+      <option name="closed" value="true" />
+      <created>1700667993608</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700667993609</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +285,8 @@
     <MESSAGE value="Added the template of Steps automation framework" />
     <MESSAGE value="Added the template of Steps + DriverFactory automation framework" />
     <MESSAGE value="Added the template of PageObject + Steps + DriverFactory + PropertyReader automation framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the template of PageObject + Steps + DriverFactory + PropertyReader automation framework" />
+    <MESSAGE value="minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

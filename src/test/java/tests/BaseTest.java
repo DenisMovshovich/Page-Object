@@ -12,6 +12,7 @@ import utils.DriverFactory;
 import utils.PropertyReader;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
 
@@ -27,6 +28,7 @@ public abstract class BaseTest {
     @BeforeClass
     public void setUpDriver() {
         driver = DriverFactory.getDriver(PropertyReader.getBrowser());
+//        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get(PropertyReader.getUrl());
         searchPage = new SearchPage();
         searchResultsPage = new SearchResultsPage();

@@ -6,9 +6,9 @@ public class SearchSteps extends BaseSteps {
 
     private static final SearchPage searchPage = new SearchPage();
 
-    public static SearchResultsSteps executeSearchByKeyword(String keyword) {
+    public static SearchResultsSteps executeSearchByKeyword(String keyword) throws InterruptedException {
         searchPage.fillSearchField(keyword);
-        searchPage.pressEnter();
+        searchPage.pressSearchButtonOrPressEnter();
         return new SearchResultsSteps();
     }
 
