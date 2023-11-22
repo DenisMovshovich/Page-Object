@@ -10,27 +10,35 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SearchResultsPage extends BasePage {
 
+
+    @FindBy(xpath = "//*[@id='APjFqb']")
+    private WebElement searchField;
+
     @FindBy(xpath = "//div[@class='yuRUbf']//h3")
-    private WebElement FirstResultRow;
+    private WebElement firstResultRow;
 
     @FindBy(xpath = "//img[@class='jfN4p']")
-    public WebElement GoogleLogoButton;
+    public WebElement googleLogoButton;
 
     public SearchResultsPage() {
         super();
     }
 
     public void assertThatTopResultContainsCorrectText(String expected) {
-        assertThat(FirstResultRow.isDisplayed()).as("Element has not been displayed!").isTrue();
-        assertThat(FirstResultRow.getText()).as("Wrong text has been displayed").isEqualTo(expected);
+        assertThat(firstResultRow.isDisplayed()).as("Element has not been displayed!").isTrue();
+        assertThat(firstResultRow.getText()).as("Wrong text has been displayed").isEqualTo(expected);
     }
 
     public void assertThatTopResultContainsProperAttributeText(String expected) {
-        assertThat(FirstResultRow.getAttribute("class")).as("Wrong attribute text!").contains("LC20lb MBeuO DKV0Md");
+        assertThat(firstResultRow.getAttribute("class")).as("Wrong attribute text!").contains("LC20lb MBeuO DKV0Md");
     }
 
     public void assertThatElementExists(WebElement webElement) {
         assertThat(webElement).as("Element does not exist").isNotNull();
+    }
+
+    public void clearSearchField() {
+        searchField.clear();
     }
 
 }
