@@ -7,7 +7,7 @@ public class SearchTest extends BaseTest {
 
     // Тест, выполняющий поиск по ключевому слову и проверку результатов без использования паттерна Steps.
     @Test
-    public void openGoogleComInChromeTest1() throws InterruptedException {
+    public void openGoogleComTest1() throws InterruptedException {
 
         // Заполнение строки поиска, нажатие кнопки поиска или клавиши Enter.
         searchPage.fillSearchField("Selenium Java");
@@ -34,7 +34,7 @@ public class SearchTest extends BaseTest {
 
     // Тот же тест, но составленный с помощью паттерна Steps.
     @Test
-    public void openGoogleComInChromeTest2() throws InterruptedException {
+    public void openGoogleComTest2() throws InterruptedException {
 
         // Использование паттерна Steps для выполнения тех же шагов.
         SearchSteps

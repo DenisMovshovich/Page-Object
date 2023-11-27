@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,21 +11,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SearchResultsPage extends BasePage {
 
-    // Поиск элемента по XPath и присвоение его переменной searchField.
-    @FindBy(xpath = "//*[@id='APjFqb']")
-    private WebElement searchField;
-
-    // Поиск элемента по XPath и присвоение его переменной firstResultRow.
-    @FindBy(xpath = "//div[@class='kb0PBd cvP2Ce jGGQ5e']//div[@class='yuRUbf']//h3")
-    private WebElement firstResultRow;
-
-    // Поиск элементов по XPath и присвоение их переменной resultRows.
-    @FindBy(xpath = "//div[@class='kb0PBd cvP2Ce jGGQ5e']//div[@class='yuRUbf']//h3")
-    private List<WebElement> resultRows;
-
     // Поиск элемента по XPath и присвоение его переменной googleLogoButton.
     @FindBy(xpath = "//img[@class='jfN4p']")
     public WebElement googleLogoButton;
+    // Поиск элемента по XPath и присвоение его переменной searchField.
+    @FindBy(xpath = "//*[@id='APjFqb']")
+    private WebElement searchField;
+    // Поиск элемента по XPath и присвоение его переменной firstResultRow.
+    @FindBy(xpath = "//div[@class='kb0PBd cvP2Ce jGGQ5e']//div[@class='yuRUbf']//h3")
+    private WebElement firstResultRow;
+    // Поиск элементов по XPath и присвоение их переменной resultRows.
+    @FindBy(xpath = "//div[@class='kb0PBd cvP2Ce jGGQ5e']//div[@class='yuRUbf']//h3")
+    private List<WebElement> resultRows;
 
     // Конструктор по умолчанию класса SearchResultsPage.
     // Использует конструктор суперкласса для инициализации объекта SearchResultsPage.
